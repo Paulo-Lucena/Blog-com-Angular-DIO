@@ -1,0 +1,23 @@
+{
+  "name": "Blog-com-Angular-DIO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"json-server --watch banco.json --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paulo-Lucena/Blog-com-Angular-DIO.git"
+  },
+  "keywords": [],
+  "author": "Paulo Lucena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paulo-Lucena/Blog-com-Angular-DIO/issues"
+  },
+  "homepage": "https://github.com/Paulo-Lucena/Blog-com-Angular-DIO#readme",
+  "dependencies": {
+    "json-serve": "^0.1.0"
+  }
+}
