@@ -26,37 +26,55 @@
       <div>
         <h3 class="text-center mb-4 font-monospace">Comente</h3>
         <div class="form-group">
-          <label for="titulo" class="font-monospace">Titulo:</label>
+          <label for="nome" class="font-monospace">Nome:</label>
           <input
             type="text"
-            id="titulo"
-            name="titulo"
-            class="form-control"
+            id="nome"
+            name="nome"
+            class="form-control mt-2"
             autocomplete="off"
-            placeholder="Digite o titulo da postagem"
+            placeholder="Informe seu nome"
+            [(ngModel)]="post.nome"
           />
           <!--for sempre aponta para um id-->
         </div>
         <div class="form-group">
-          <label for="titulo" class="font-monospace">Texto:</label>
+          <label for="mensagem" class="font-monospace">Mensagem:</label>
           <textarea
-            id="texto"
-            name="texto"
+            id="mensagem"
+            name="mensagem"
             autocomplete="off"
             cols="30"
             rows="4"
-            class="form-control"
+            class="form-control mb-4"
+            [(ngModel)]="post.mensagem"
           >
           </textarea>
           <!--for sempre aponta para um id-->
           <div class="d-flex justify-content-end mt-4">
-            <button type="button" class="btn btn-outline-info w-25">
+            <button
+              type="button"
+              class="btn btn-outline-info w-25"
+              (click)="postar()"
+            >
               Publicar
             </button>
           </div>
         </div>
-        <hr class="mt-5 mb-5">
-        <h3 class="text-center mb-5 font-monospace">Comentários adicionados</h3>
+        <hr class="mt-5 mb-5" />
+
+        <h3 class="text-center mb-5 text-monospace">Comentários adicionados</h3>
+        <div class="container">
+          <div class="card mb-4" *ngFor="let post of listPost">
+            <div class="card-header">
+              <h5 class="card-tile">{{ post.id }}</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">{{ post.nome }}</p>
+              <p class="card-text">{{ post.mensagem }}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
