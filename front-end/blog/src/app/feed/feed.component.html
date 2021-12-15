@@ -1,1 +1,63 @@
-<p>feed works!</p>
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem">
+        <div class="d-flex justify-content-center">
+          <img src="./../../assets/img5.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Usuario name</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary d-flex justify-content-center"
+            >Visite seu perfil</a
+          >
+          <hr class="mt-4 mb-4" />
+          <h6 class="mb-3 font-monospace text-center">Pesquisar por título</h6>
+          <input type="text" class="form-control mb-3 w-100" />
+          <button class="btn btn-outline-warning w-100">Pesquise</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div>
+        <h3 class="text-center mb-4 font-monospace">Comente</h3>
+        <div class="form-group">
+          <label for="titulo" class="font-monospace">Titulo:</label>
+          <input
+            type="text"
+            id="titulo"
+            name="titulo"
+            class="form-control"
+            autocomplete="off"
+            placeholder="Digite o titulo da postagem"
+          />
+          <!--for sempre aponta para um id-->
+        </div>
+        <div class="form-group">
+          <label for="titulo" class="font-monospace">Texto:</label>
+          <textarea
+            id="texto"
+            name="texto"
+            autocomplete="off"
+            cols="30"
+            rows="4"
+            class="form-control"
+          >
+          </textarea>
+          <!--for sempre aponta para um id-->
+          <div class="d-flex justify-content-end mt-4">
+            <button type="button" class="btn btn-outline-info w-25">
+              Publicar
+            </button>
+          </div>
+        </div>
+        <hr class="mt-5 mb-5">
+        <h3 class="text-center mb-5 font-monospace">Comentários adicionados</h3>
+      </div>
+    </div>
+  </div>
+</div>
